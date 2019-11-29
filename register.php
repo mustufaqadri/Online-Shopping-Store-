@@ -76,8 +76,8 @@
 				        $mail->isSMTP();                                     
 				        $mail->Host = 'smtp.gmail.com';                      
 				        $mail->SMTPAuth = true;                               
-				        $mail->Username = 'smustufaqadri@gmail.com';     
-				        $mail->Password = '3741micro';                    
+				        $mail->Username = '';     // Write your email here
+				        $mail->Password = '';     // Write your password here 
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
 				            'verify_peer' => false,
@@ -88,11 +88,11 @@
 				        $mail->SMTPSecure = 'ssl';                           
 				        $mail->Port = 465;                                   
 
-				        $mail->setFrom('smustufaqadri@gmail.com');
+				        $mail->setFrom(''); // Write your email here
 				        
 				        //Recipients
 				        $mail->addAddress($email);              
-				        $mail->addReplyTo('smustufaqadri@gmail.com');
+				        $mail->addReplyTo('');  // // Write your email here
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
